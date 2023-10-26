@@ -1,0 +1,42 @@
+@import "src/app/styles/mixins";
+
+.empty-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.message  {
+  color: $primary--color;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.message1 {
+  @extend .message;
+  font-size: 1rem;
+}
+
+.message2 {
+  @extend .message;
+  font-size: .75rem;
+}
+
+.fade-container {
+  height: 6rem;
+  width: 100%;
+  position: relative;
+}
+
+.icon-banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: $primary--color;
+  font-size: 5rem;
+}

@@ -1,0 +1,25 @@
+@import "src/app/styles/mixins";
+
+body {
+  margin: 0;
+  font-family: "Montserrat",sans-serif;
+}
+
+.app-container {
+  min-height: 50rem;
+}
+
+.page-container {
+  padding: 0 4rem 4rem 4rem;
+
+  @include screen('desktop') {
+    padding: 1rem;
+  }
+
+  @include screen('tablet-landscape') {
+    padding: .75rem;
+  }
+  @include screen('phone') {
+    padding: .5rem;
+  }
+}

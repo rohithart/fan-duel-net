@@ -1,0 +1,23 @@
+<app-heading [heading]="'Team: ' + team?.name"  [check]="team"></app-heading>
+
+<div class="page-container">
+  <app-empty *ngIf="!team" icon="fas fa-users" message1="Team not found" message2="Please check"></app-empty>
+
+  <div class="row" *ngIf="team">
+    <div class="col-md-3 panel">
+      <app-sub-heading heading="Players"></app-sub-heading>
+      <app-empty *ngIf="players.length === 0" icon="fas fa-user" message1="No players added" message2="Add players first"></app-empty>
+      <button mat-raised-button aria-label="Add player" color="primary" (click)="addPlayer()" class="add-button"><i class="fas fa-eye"></i> Add player</button>
+
+      <div *ngFor="let player of players">
+        <app-player-card [player]="player" (playerEmitter)="playerSelected($event)"></app-player-card>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <app-sub-heading heading="Depth chart"></app-sub-heading>
+      <app-depth-table  *ngIf="depth?.depthChart" [depth]="depth" (refreshEmitter)="refresh()"></app-depth-table>
+      <app-empty *ngIf="!depth?.depthChart" icon="fas fa-list" message1="No depth added yet." message2="Start adding depth by selecting a user"></app-empty>
+    </div>
+  </div>
+</div>

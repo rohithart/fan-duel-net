@@ -1,0 +1,11 @@
+@import "src/app/styles/mixins";
+
+.key {
+  font-size: 1rem;
+  font-weight: bold;
+  color: $primary--color;
+}
+
+.key-width {
+  width: 1rem;
+}

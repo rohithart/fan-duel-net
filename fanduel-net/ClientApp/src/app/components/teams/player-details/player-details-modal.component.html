@@ -1,0 +1,27 @@
+<div mat-dialog-content>
+  <h2>{{data.player.name}}</h2>
+  <div class="row">
+    <div class="col-md-6 panel">
+      <app-sub-heading heading="Details"></app-sub-heading>
+
+      <p class="details"> Name: {{data.player.name}}</p>
+      <p class="details"> Number: {{data.player.num}}</p>
+      <p class="details"> Team: {{data.player.team.name}}</p>
+      <p class="details"> Position: {{data.position}}</p>
+      <p class="details"> Depth: {{data.depth}}</p>
+    </div>
+    <div class="col-md-6">
+      <app-sub-heading heading="Backups"></app-sub-heading>
+
+      <p *ngIf="backups.length === 0">There are no backups for {{data.player.name}}</p>
+      <div *ngFor="let player of backups">
+        <p>#{{player.num}} {{player.name}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div mat-dialog-actions class="action-buttons">
+  <button mat-stroked-button aria-label="Remove player" color="warn" (click)="removePlayer()">Remove from {{data.position}}</button>
+  <button mat-raised-button aria-label="Done" color="primary" (click)="onYesClick()">Done</button>
+</div>

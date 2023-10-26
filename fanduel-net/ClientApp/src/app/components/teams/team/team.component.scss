@@ -1,0 +1,12 @@
+@import "src/app/styles/mixins";
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid $primary--color
+}
+
+.add-button {
+  margin-bottom: .5rem;
+}

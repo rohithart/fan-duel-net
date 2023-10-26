@@ -1,0 +1,12 @@
+<app-heading [heading]="'Sport: ' + sport?.name" [check]="sport"></app-heading>
+
+<div class="page-container">
+  <app-empty *ngIf="!sport" icon="fas fa-wine-glass-empty" message1="Sport not found" message2="Please check"></app-empty>
+
+  <div class="row" *ngIf="sport">
+    <div *ngFor="let team of teams" class="col-md-3">
+      <app-card [name]="team.name" url="/team/{{team.id}}">
+      </app-card>
+    </div>
+  </div>
+</div>

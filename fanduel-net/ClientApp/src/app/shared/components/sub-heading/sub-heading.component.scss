@@ -1,0 +1,33 @@
+@import "src/app/styles/mixins";
+
+.heading div {
+  text-align: center;
+  font-size: 1rem;
+  color: $primary--color;
+  padding-bottom: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.heading div:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: relative;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: $primary--color;
+}
+
+.heading div:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: $primary--color;
+}

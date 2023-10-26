@@ -1,0 +1,12 @@
+<app-heading heading="All teams" [check]="teams"></app-heading>
+
+<div class="page-container">
+  <div class="row">
+    <app-empty *ngIf="teams.length === 0" icon="fas fa-wine-glass-empty" message1="There are no teams" message2="Start by adding new team"></app-empty>
+
+    <div *ngFor="let team of teams" class="col-md-3">
+      <app-card [name]="team.name" [description]="team.sport.name" url="/team/{{team.id}}">
+      </app-card>
+    </div>
+  </div>
+</div>

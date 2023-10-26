@@ -1,0 +1,9 @@
+<mat-card class="tile-card">
+  <mat-card-header>
+    <mat-card-title [routerLink]="url">{{name}}</mat-card-title>
+    <mat-card-subtitle>{{description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions class="tile-actions">
+    <button mat-stroked-button aria-label="View" color="primary" [routerLink]="url"><i class="fas fa-eye"></i> View</button>
+  </mat-card-actions>
+</mat-card>

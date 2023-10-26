@@ -1,0 +1,46 @@
+@import "src/app/styles/mixins";
+
+.nav-left-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include screen('tablet-landscape') {
+    flex-direction: column;
+  }
+}
+
+.nav-left-containers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.pic {
+  height: 50px;
+  width: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 6px;
+  background: $primary--color;
+}
+
+.app-name {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.nav-bar {
+  color: $primary--color;
+  background: $white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  @include screen('tablet-landscape') {
+    height: 7rem;
+  }
+}

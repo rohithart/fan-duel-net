@@ -1,0 +1,13 @@
+@import "src/app/styles/mixins";
+
+.message {
+  color: $primary--color;
+}
+
+.nav__logo {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: $primary--color;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}

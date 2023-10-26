@@ -1,0 +1,40 @@
+<div>
+  <mat-toolbar class="nav-bar">
+    <div class="nav-left-container">
+      <div class="nav-left-containers">
+        <button mat-button aria-label="Menu" [mat-menu-trigger-for]="menu" fxShow fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <a routerLink="/" aria-label="Home"><img src="assets/images/logo.svg" class="pic" alt="profile picture"></a>
+      </div>
+    </div>
+
+    <span class="fill-remaining-space"></span>
+
+    <div fxLayout="row" fxHide fxShow.gt-sm>
+      <div>
+        <button mat-button class="menu-button" *ngFor="let item of menuItems" routerLink="{{item.link}}">
+          <i class="{{item.icon}}"></i> {{item.name}}
+        </button>
+      </div>
+
+      <button mat-button aria-label="Other" class="menu-button" [matMenuTriggerFor]="defaultMenu">Other <i
+          class="fas fa-chevron-down"></i></button>
+      <mat-menu #defaultMenu="matMenu">
+        <button mat-menu-item class="menu-item" *ngFor="let item of menuItemsDefault" routerLink="{{item.link}}">
+          <i class="{{item.icon}}"></i> {{item.name}}
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+
+  <mat-menu x-position="before" #menu>
+    <button mat-menu-item class="menu-item" *ngFor="let item of menuItems" routerLink="{{item.link}}">
+      <i class="{{item.icon}}"></i> {{item.name}}
+    </button>
+
+    <button mat-menu-item class="menu-item" *ngFor="let item of menuItemsDefault" routerLink="{{item.link}}">
+      <i class="{{item.icon}}"></i> {{item.name}}
+    </button>
+  </mat-menu>
+</div>

@@ -1,0 +1,13 @@
+<app-heading heading="All sports" [check]="sports"></app-heading>
+
+<div class="page-container">
+  <div class="row">
+    <app-empty *ngIf="sports.length === 0" icon="fas fa-wine-glass-empty" message1="There are no sports" message2="Start by adding new sport"></app-empty>
+
+    <div *ngFor="let sport of sports" class="col-md-3">
+      <app-card [name]="sport.name" url="/sport/{{sport.id}}">
+      </app-card>
+    </div>
+
+  </div>
+</div>

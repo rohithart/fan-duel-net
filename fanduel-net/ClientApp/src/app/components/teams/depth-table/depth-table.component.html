@@ -1,0 +1,20 @@
+<table mat-table [dataSource]="depth.depthChart | keyvalue" class="mat-elevation-z8">
+  <ng-container matColumnDef="key" class="key-width">
+    <th mat-header-cell *matHeaderCellDef class="key key-width">Pos</th>
+    <td mat-cell *matCellDef="let element" class="key key-width">{{ element.key }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="values">
+    <th mat-header-cell *matHeaderCellDef class="key">Players</th>
+    <td mat-cell *matCellDef="let element" class="row">
+        <div *ngFor="let value of element.value; index as i" class="col-md-4">
+          <app-player-depth-card [player]="value"[depth]="i+1" [position]="element.key" [teamDepth]="depth" (refreshEmitter)="refresh()"></app-player-depth-card>
+        </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="['key', 'values']"></tr>
+  <tr mat-row *matRowDef="let row; columns: ['key', 'values']"></tr>
+</table>
+
+

@@ -1,0 +1,57 @@
+@import "src/app/styles/mixins";
+
+.player-description {
+  color: $primary--color;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.tile-card {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.player-number {
+  border-radius: 60%;
+  background-color: $primary--color;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.player-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.player-detail {
+  cursor: pointer;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.player-name {
+  @extend .player-detail;
+  color: $primary--color;
+  font-size: large;
+  font-weight: bold
+}
+
+.player-position {
+  @extend .player-detail;
+  color: $grey;
+}

@@ -1,0 +1,58 @@
+﻿<Properties StartupConfiguration="{6A05F1E0-AD20-431C-A785-411352213CB7}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.fanduel-net PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="fanduel-net/Models/TeamDepth.cs">
+    <Files>
+      <File FileName="fanduel-net/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="fanduel-net/Program.cs" />
+      <File FileName="fanduel-net/ClientApp/src/main.ts" Line="15" Column="1" />
+      <File FileName="fanduel-net/ClientApp/src/environments/environment.ts" />
+      <File FileName="fanduel-net/ClientApp/src/index.html" Line="1" Column="1" />
+      <File FileName="fanduel-net/ClientApp/src/app/app.module.ts" />
+      <File FileName="fanduel-net/ClientApp/package.json" Line="59" Column="1" />
+      <File FileName="fanduel-net/fanduel-net.csproj" Line="32" Column="65" />
+      <File FileName="fanduel-net/ClientApp/aspnetcore-https.js" Line="1" Column="1" />
+      <File FileName="fanduel-net/ClientApp/src/polyfills.ts" Line="1" Column="1" />
+      <File FileName="fanduel-net/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="fanduel-net/Controllers/PlayersController.cs" Line="21" Column="49" />
+      <File FileName="fanduel-net/Interfaces/IPlayersRepository.cs" Line="8" Column="23" />
+      <File FileName="fanduel-net/Interfaces/IPlayersService.cs" Line="1" Column="1" />
+      <File FileName="fanduel-net/Interfaces/ISportsRepository.cs" Line="8" Column="22" />
+      <File FileName="fanduel-net/Interfaces/ISportsService.cs" Line="5" Column="26" />
+      <File FileName="fanduel-net/Interfaces/ITeamsRepository.cs" Line="8" Column="21" />
+      <File FileName="fanduel-net/Interfaces/ITeamsService.cs" Line="1" Column="1" />
+      <File FileName="fanduel-net/Repositories/PlayersRepository.cs" Line="13" Column="45" />
+      <File FileName="fanduel-net/Repositories/SportsRepository.cs" Line="14" Column="46" />
+      <File FileName="fanduel-net/Data/PalyersData.cs" Line="2" Column="1" />
+      <File FileName="fanduel-net/Data/SportsData.cs" Line="2" Column="1" />
+      <File FileName="fanduel-net/Data/TeamsData.cs" Line="2" Column="1" />
+      <File FileName="fanduel-net/Repositories/TeamsRepository.cs" Line="12" Column="9" />
+      <File FileName="fanduel-net/Services/PlayersService.cs" Line="19" Column="22" />
+      <File FileName="fanduel-net/Services/SportsService.cs" Line="17" Column="23" />
+      <File FileName="fanduel-net/Services/TeamsService.cs" Line="10" Column="31" />
+      <File FileName="fanduel-net/Controllers/SportsController.cs" Line="21" Column="49" />
+      <File FileName="fanduel-net/Controllers/TeamsController.cs" Line="21" Column="47" />
+      <File FileName="fanduel-net/Models/TeamDepth.cs" Line="8" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="fanduel-net" expanded="True">
+            <Node name="fanduel-net" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="TeamDepth.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.fanduel-net.Tests FirstBuild="True" />
+</Properties>
